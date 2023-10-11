@@ -56,6 +56,64 @@
     .whatsapp-icon {
       margin-top:13px;
     }
+    .w-35{width:35%!important}
+
+    @font-face {
+      font-family: 'SofaChrome';
+      src: url('assets/fonts_developing/sofachrome_rg.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+        font-family: 'SofaChrome';
+        src: url('assets/fonts_developing/sofachrome_rg.otf') format('opentype');
+      }
+    }
+
+
+    @font-face {
+      font-family: 'SofaChromeIt';
+      src: url('assets/fonts_developing/sofachrome_rg_it.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+        font-family: 'SofaChromeIt';
+        src: url('assets/fonts_developing/sofachrome_rg_it.otf') format('opentype');
+      }
+    }
+
+
+
+    @font-face {
+      font-family: 'Uniwars';
+      src: url('assets/fonts_developing/Uniwars_W00_Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+        font-family: 'Uniwars';
+        src: url('assets/fonts_developing/Uniwars_W00_Regular.ttf') format('truetype');
+      }
+    }
+    .text-developing{
+      font-family: 'SofaChrome', sans-serif !important;
+    }
+    .text-uniwars {
+      font-family: 'Uniwars', sans-serif !important;
+      font-weight: 100
+    }
+
+    .fs-11 {
+      font-size: 11px !important
+    }
+
   </style>
 </head>
 
@@ -67,12 +125,12 @@
     <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+        <a href="#" class="navbar-brand w-35"><img src="assets/img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <i class="lni-menu"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse text-developing fs-11" id="navbarCollapse">
           <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
             <li class="nav-item active">
               <a class="nav-link" href="#hero-area">
@@ -135,7 +193,7 @@
   <section id="services" class="section-padding">
     <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Nuestros Servicios</h2>
+        <h2 class="section-title wow fadeInDown text-developing" data-wow-delay="0.3s">Nuestros Servicios</h2>
         <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
       </div>
       <div class="row">
@@ -286,7 +344,7 @@
           <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
             <div>
               <div class="site-heading">
-                <h2 class="section-title">¿Quienes Somos?</h2>
+                <h2 class="section-title text-developing">¿Quienes Somos?</h2>
               </div>
               <div class="content" style="color: #403f3f;">
                 <p>
@@ -313,7 +371,7 @@
   <section id="features" class="section-padding">
     <div class="container">
       <div class="section-header text-center">
-        <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">
+        <h2 class="section-title wow fadeInDown text-developing" data-wow-delay="0.3s">
           Tecnologías, detalles de servicios y mas.
           </h2>
         <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
@@ -395,7 +453,7 @@
     <section id="contact" class="section-padding bg-gray">
       <div class="container">
         <div class="section-header text-center">
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Contactos</h2>
+          <h2 class="section-title wow fadeInDown text-developing" data-wow-delay="0.3s">Contactos</h2>
           <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
         <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
@@ -441,7 +499,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
             <div class="widget">
-              <h3 class="footer-logo"><img src="assets/img/logo.png" alt=""></h3>
+              <h3 class="footer-logo"><img class="w-100" src="assets/img/logo_main.png" alt=""></h3>
               <div class="textwidget">
                 <p>
                   ¡Somos una startup que cree en otras startup!
@@ -456,13 +514,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <h3 class="footer-titel">Productos</h3>
-            <ul class="footer-link">
-              <li><a href="#">Próximamente</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <h3 class="footer-titel">Otros Servicios</h3>
+            <h3 class="footer-titel text-developing">Otros Servicios</h3>
             <ul class="footer-link">
               <li><a href="#">Integración Salesforce</a></li>
               <li><a href="#">Integración SAP</a></li>
@@ -472,7 +524,13 @@
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-            <h3 class="footer-titel">Contactos</h3>
+            <h3 class="footer-titel text-developing">Productos</h3>
+            <ul class="footer-link">
+              <li><a href="#">Próximamente</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="footer-titel text-developing">Contactos</h3>
             <ul class="address">
               <li>
                 <a target="_blank" href="https://api.whatsapp.com/send/?phone=16162743175">

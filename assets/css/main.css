@@ -73,10 +73,10 @@ a:not([href]):not([tabindex]) {
 }
 
 .section-title {
-  font-size: 30px;
+  font-size: 20px;
   color: #222222;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 100;
   position: relative;
 }
 
