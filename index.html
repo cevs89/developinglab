@@ -57,6 +57,7 @@
       margin-top:13px;
     }
     .w-35{width:35%!important}
+    .w-200{width:200%!important}
 
     @font-face {
       font-family: 'SofaChrome';
@@ -125,7 +126,12 @@
     <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <a href="#" class="navbar-brand w-35"><img src="assets/img/logo.png" alt=""></a>
+
+        <a href="#" class="navbar-brand w-35">
+           <img class="d-none d-md-block" src="assets/img/logo.png" alt="">
+           <img class="d-md-none w-200" src="assets/img/logo.png" alt="">
+         </a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <i class="lni-menu"></i>
